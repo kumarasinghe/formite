@@ -1,0 +1,11 @@
+.form__input-field{
+    display: block;
+    margin: 15px;
+}
+
+.form__error-label{
+    display: block;
+    margin-top: 5px;
+    font-size: smaller;
+    color: red;
+}
