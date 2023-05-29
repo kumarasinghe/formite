@@ -12,23 +12,21 @@
 
 #### 🚀 Designed with simplicity and performance in mind
 
-### Install
+## Installation
 
 ```sh
 npm install formite
 ```
 
-### Usage
+## Login form example
 
 ```tsx
-// LoginForm.tsx
-
 import { component$, useStore} from "@builder.io/qwik";
 import Form, { ValidationStore } from "formite";
 
 export const LoginForm = component$(() => {
 
-  // a store with inputs to validate with their validators
+  // a store defining the inputs we need to validate along with their validators
   const validationStore: ValidationStore = useStore({
     email: {
       validator: /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/, // or z.string().email()
@@ -39,7 +37,10 @@ export const LoginForm = component$(() => {
   });
 
   return (
-    <Form validationStore={validationStore} onSubmit$={console.log}>
+    <Form 
+      validationStore={validationStore}
+      onSubmit$={(formData)=>{/* send form data to server */}}>
+
       {/* email */}
       <div>
         Email: <input name="email" />
@@ -64,3 +65,5 @@ export const LoginForm = component$(() => {
   );
 });
 ```
+
+### Have an issue? [Post it here](https://github.com/kumarasinghe/formite/issues)
