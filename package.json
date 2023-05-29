@@ -1,6 +1,6 @@
 {
   "name": "formite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimal and lightweight form library for Qwik",
   "keywords": ["qwik", "form", "validation", "signup", "login", "lightweight", "minimal", "formite", "hook forms", "formik"],
   "author": "Naveen Kumarasinghe <dndkumarasinghe@gmail.com>",
